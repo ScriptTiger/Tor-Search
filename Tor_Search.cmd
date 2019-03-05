@@ -296,6 +296,7 @@ goto Menu
 :OPT4
 set Results=0
 for /f %%0 in ('%Search%') do set /a Results=!Results!+1
+set Search=%Search:^^=%
 if %Results%==0 (
 	echo.
 	echo No results match your search criteria
@@ -304,9 +305,9 @@ if %Results%==0 (
 	pause
 ) else (
 	if %OPT%==3 (
-		for /f "tokens=*" %%0 in ('%Search%') do @echo %%0
+		%Search% | more
 		pause
-	) else 	(for /f "tokens=*" %%0 in ('%Search%') do echo %%0)>>"%FILE%"
+	) else %Search%>>"%FILE%"
 )
 goto Menu
 
