@@ -261,7 +261,7 @@ for /f "tokens=1* delims==" %%0 in ('set _ts_') do (
 	if "!Search!"=="" (
 		set Search=findstr "%%1" %TABLE%
 	) else (
-		set Search=!Search! ^^^^| findstr "%%1"
+		set Search=!Search! ^^^^^| findstr "%%1"
 	)
 )
 cls
@@ -304,9 +304,9 @@ if %Results%==0 (
 	pause
 ) else (
 	if %OPT%==3 (
-		%Search% | more
+		for /f "tokens=*" %%0 in ('%Search%') do @echo %%0
 		pause
-	) else 	%Search%>>"%FILE%"
+	) else 	(for /f "tokens=*" %%0 in ('%Search%') do echo %%0)>>"%FILE%"
 )
 goto Menu
 
