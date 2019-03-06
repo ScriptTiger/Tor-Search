@@ -10,11 +10,11 @@ Regular expression quick reference:
 
 Symbol   | Function
 ---------|------------------------------------------------------------------------------------------------------------------------
-.        | Wildcard: any character
-+        | Repeat: zero or more occurrences of previous character or class
-[class]  | Character class: any one character in set
-[-class] | Inverse class: any one character not in set
-[x-y]    | Range: any characters within the specified range
+`.`        | Wildcard: any character
+`+`        | Repeat: zero or more occurrences of previous character or class
+`[class]`  | Character class: any one character in set
+`[-class]` | Inverse class: any one character not in set
+`[x-y]`    | Range: any characters within the specified range
 
     Unlike standard REGEX:
     The plus sign ("+") is used instead of the asterisk ("*").
