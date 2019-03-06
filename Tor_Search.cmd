@@ -395,6 +395,7 @@ rem Reinterpret input
 rem =====
 
 :Input
+if "%~2"=="" exit /b
 set var=%~2
 set var=!var:+=*!
 set var=!var:[-=[^^!
