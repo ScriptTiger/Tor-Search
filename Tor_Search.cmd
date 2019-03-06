@@ -94,70 +94,70 @@ rem =====
 :_ts_ip_address
 set _ts_ip_address=
 set /p var=IP Address: 
-for %%0 in (%var%) do set _ts_ip_address=!_ts_ip_address! ^^^^1:%%0,
+for %%0 in (%var%) do set _ts_ip_address=!_ts_ip_address! ^^^^A:%%0,
 call :Input _ts_ip_address "%_ts_ip_address%"
 goto Menu
 
 :_ts_city_network
 set _ts_city_network=
 set /p var=WAN: 
-for %%0 in (%var%) do set _ts_city_network=!_ts_city_network! ,2:%%0,
+for %%0 in (%var%) do set _ts_city_network=!_ts_city_network! ,B:%%0,
 call :Input _ts_city_network "%_ts_city_network%"
 goto Menu
 
 :_ts_geoname_id
 set _ts_geoname_id=
 set /p var=Geoname ID: 
-for %%0 in (%var%) do set _ts_geoname_id=!_ts_geoname_id! ,3:%%0,
+for %%0 in (%var%) do set _ts_geoname_id=!_ts_geoname_id! ,C:%%0,
 call :Input _ts_geoname_id "%_ts_geoname_id%"
 goto Menu
 
 :_ts_registered_country_geoname_id
 set _ts_registered_country_geoname_id=
 set /p var=Registered Country Geoname ID: 
-for %%0 in (%var) do set _ts_registered_country_geoname_id=!_ts_registered_country_geoname_id! ,4:%%0,
+for %%0 in (%var) do set _ts_registered_country_geoname_id=!_ts_registered_country_geoname_id! ,D:%%0,
 call :Input _ts_registered_country_geoname_id "%_ts_registered_country_geoname_id%"
 goto Menu
 
 :_ts_represented_country_geoname_id
 set _ts_represented_country_geoname_id=
 set /p var=Represented Country Geoname ID: 
-for %%0 in (%var%) do set _ts_represented_country_geoname_id=!_ts_represented_country_geoname_id! ,5:%%0,
+for %%0 in (%var%) do set _ts_represented_country_geoname_id=!_ts_represented_country_geoname_id! ,E:%%0,
 call :Input _ts_represented_country_geoname_id "%_ts_represented_country_geoname_id%"
 goto Menu
 
 :_ts_is_anonymous_proxy
 set _ts_is_anonymous_proxy=
 choice /m "Kown Proxy: "
-if %errorlevel%==1 set _ts_is_anonymous_proxy=,6:1,
-if %errorlevel%==2 set _ts_is_anonymous_proxy=,6:0,
+if %errorlevel%==1 set _ts_is_anonymous_proxy=,F:1,
+if %errorlevel%==2 set _ts_is_anonymous_proxy=,F:0,
 goto Menu
 
 :_ts_postal_code
 set _ts_postal_code=
 set /p var=Postal Code: 
-for %%0 in (%var%) do set _ts_postal_code=!_ts_postal_code! ,7:%%0,
+for %%0 in (%var%) do set _ts_postal_code=!_ts_postal_code! ,G:%%0,
 call :Input _ts_postal_code "%_ts_postal_code%"
 goto Menu
 
 :_ts_latitude
 set _ts_latitude=
 set /p var=Latitude: 
-for %%0 in (%var%) do set _ts_latitude=!_ts_latitude! ,8:%%0,
+for %%0 in (%var%) do set _ts_latitude=!_ts_latitude! ,H:%%0,
 call :Input _ts_latitude "%_ts_latitude%"
 goto Menu
 
 :_ts_longitude
 set _ts_longitude=
 set /p var=Longitude: 
-for %%0 in (%var%) do set _ts_longitude=!_ts_longitude! ,9:%%0,
+for %%0 in (%var%) do set _ts_longitude=!_ts_longitude! ,I:%%0,
 call :Input _ts_longitude "%_ts_longitude%"
 goto Menu
 
 :_ts_accuracy_radius
 set _ts_accuracy_radius=
 set /p var=Accuracy Radius: 
-for %%0 in (%var%) do set _ts_accuracy_radius=!_ts_accuracy_radius! ,10:%%0,
+for %%0 in (%var%) do set _ts_accuracy_radius=!_ts_accuracy_radius! ,J:%%0,
 call :Input _ts_accuracy_radius "%_ts_accuracy_radius%"
 goto Menu
 
@@ -192,13 +192,13 @@ if %errorlevel%==6 set _ts_continent_code=%_ts_continent_code% Oceania,
 if %errorlevel%==7 set _ts_continent_code=%_ts_continent_code% South America,
 
 if %errorlevel%==8 (
-	set _ts_continent_code=!_ts_continent_code:Africa,=,11:AF,!
-	set _ts_continent_code=!_ts_continent_code:Antarctica,=,11:AN,!
-	set _ts_continent_code=!_ts_continent_code:Asia,=,11:AS,!
-	set _ts_continent_code=!_ts_continent_code:Europe,=,11:EU,!
-	set _ts_continent_code=!_ts_continent_code:North America,=,11:NA,!
-	set _ts_continent_code=!_ts_continent_code:Oceania,=,11:OC,!
-	set _ts_continent_code=!_ts_continent_code:South America,=,11:SA,!
+	set _ts_continent_code=!_ts_continent_code:Africa,=,K:AF,!
+	set _ts_continent_code=!_ts_continent_code:Antarctica,=,K:AN,!
+	set _ts_continent_code=!_ts_continent_code:Asia,=,K:AS,!
+	set _ts_continent_code=!_ts_continent_code:Europe,=,K:EU,!
+	set _ts_continent_code=!_ts_continent_code:North America,=,K:NA,!
+	set _ts_continent_code=!_ts_continent_code:Oceania,=,K:OC,!
+	set _ts_continent_code=!_ts_continent_code:South America,=,K:SA,!
 	goto Menu
 )
 if %errorlevel%==9 goto _ts_continent_code
@@ -207,64 +207,64 @@ goto _ts_continent_code2
 :_ts_country_iso_code
 set _ts_country_iso_code=
 set /p var=Country ISO Code: 
-for %%0 in (%var%) do set _ts_country_iso_code=!_ts_country_iso_code! ,12:%%0,
+for %%0 in (%var%) do set _ts_country_iso_code=!_ts_country_iso_code! ,L:%%0,
 call :Input _ts_country_iso_code "%_ts_country_iso_code%"
 goto Menu
 
 :_ts_subdivision_1_iso_code
 set _ts_subdivision_1_iso_code=
 set /p var=Subdivision 1 ISO Code: 
-for %%0 in (%var%) do set _ts_subdivision_1_iso_code=!_ts_subdivision_1_iso_code! ,13:%%0,
+for %%0 in (%var%) do set _ts_subdivision_1_iso_code=!_ts_subdivision_1_iso_code! ,M:%%0,
 call :Input _ts_subdivision_1_iso_code "%_ts_subdivision_1_iso_code%"
 goto Menu
 
 :_ts_subdivision_2_iso_code
 set _ts_subdivision_2_iso_code=
 set /p var=Subdivision 2 ISO Code: 
-for %%0 in (%var%) do set _ts_subdivision_2_iso_code=!_ts_subdivision_2_iso_code! ,14:%%0,
+for %%0 in (%var%) do set _ts_subdivision_2_iso_code=!_ts_subdivision_2_iso_code! ,N:%%0,
 call :Input _ts_subdivision_2_iso_code "%_ts_subdivision_2_iso_code%"
 goto Menu
 
 :_ts_metro_cod
 set _ts_metro_code=
 set /p var=Metro Code: 
-for %%0 in (%var%) do set _ts_metro_code=!_ts_metro_code! ,15:%%0,
+for %%0 in (%var%) do set _ts_metro_code=!_ts_metro_code! ,O:%%0,
 call :Input _ts_metro_cod "%_ts_metro_cod%"
 goto Menu
 
 :_ts_time_zone
 set _ts_time_zone=
 set /p var=Time Zone: 
-for %%0 in (%var%) do set _ts_time_zone=!_ts_time_zone! ,16:%%0,
+for %%0 in (%var%) do set _ts_time_zone=!_ts_time_zone! ,P:%%0,
 call :Input _ts_time_zone "%_ts_time_zone%"
 goto Menu
 
 :_ts_is_in_european_union
 set _ts_is_in_european_union=
 choice /m "European Union: "
-if %errorlevel%==1 set _ts_is_in_european_union=,17:1,
-if %errorlevel%==2 set _ts_is_in_european_union=,17:0,
+if %errorlevel%==1 set _ts_is_in_european_union=,Q:1,
+if %errorlevel%==2 set _ts_is_in_european_union=,Q:0,
 goto Menu
 
 :_ts_asn_network
 set _ts_asn_network=
 set /p var=ASN Network: 
-for %%0 in (%var%) do set _ts_asn_network=!_ts_asn_network! ,18:%%0,
+for %%0 in (%var%) do set _ts_asn_network=!_ts_asn_network! ,R:%%0,
 call :Input _ts_asn_network "%_ts_asn_network%"
 goto Menu
 
 :_ts_autonomous_system_number
 set _ts_autonomous_system_number=
 set /p var=ASN: 
-for %%0 in (%var%) do set _ts_autonomous_system_number=!_ts_autonomous_system_number! ,19:%%0,
+for %%0 in (%var%) do set _ts_autonomous_system_number=!_ts_autonomous_system_number! ,S:%%0,
 call :Input _ts_autonomous_system_number "%_ts_autonomous_system_number%"
 goto Menu
 
 :_ts_is_tor_node
 set _ts_is_tor_node=
 choice /m "Known Tor Exit: "
-if %errorlevel%==1 set _ts_is_tor_node=,20:1$
-if %errorlevel%==2 set _ts_is_tor_node=,20:0$
+if %errorlevel%==1 set _ts_is_tor_node=,T:1$
+if %errorlevel%==2 set _ts_is_tor_node=,T:0$
 goto Menu
 
 rem =====
