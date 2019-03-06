@@ -95,30 +95,35 @@ rem =====
 set _ts_ip_address=
 set /p var=IP Address: 
 for %%0 in (%var%) do set _ts_ip_address=!_ts_ip_address! ^^^^1:%%0,
+set _ts_ip_address=%_ts_ip_address:$=*%
 goto Menu
 
 :_ts_city_network
 set _ts_city_network=
 set /p var=WAN: 
 for %%0 in (%var%) do set _ts_city_network=!_ts_city_network! ,2:%%0,
+set _ts_city_network=%_ts_city_network:$=*%
 goto Menu
 
 :_ts_geoname_id
 set _ts_geoname_id=
 set /p var=Geoname ID: 
 for %%0 in (%var%) do set _ts_geoname_id=!_ts_geoname_id! ,3:%%0,
+set _ts_geoname_id=%_ts_geoname_id:$=*%
 goto Menu
 
 :_ts_registered_country_geoname_id
 set _ts_registered_country_geoname_id=
 set /p var=Registered Country Geoname ID: 
 for %%0 in (%var) do set _ts_registered_country_geoname_id=!_ts_registered_country_geoname_id! ,4:%%0,
+set _ts_registered_country_geoname_id=%_ts_registered_country_geoname_id:$=*%
 goto Menu
 
 :_ts_represented_country_geoname_id
 set _ts_represented_country_geoname_id=
 set /p var=Represented Country Geoname ID: 
 for %%0 in (%var%) do set _ts_represented_country_geoname_id=!_ts_represented_country_geoname_id! ,5:%%0,
+set _ts_represented_country_geoname_id=%_ts_represented_country_geoname_id:$=*%
 goto Menu
 
 :_ts_is_anonymous_proxy
@@ -132,24 +137,28 @@ goto Menu
 set _ts_postal_code=
 set /p var=Postal Code: 
 for %%0 in (%var%) do set _ts_postal_code=!_ts_postal_code! ,7:%%0,
+set _ts_postal_code=%_ts_postal_code:$=*%
 goto Menu
 
 :_ts_latitude
 set _ts_latitude=
 set /p var=Latitude: 
 for %%0 in (%var%) do set _ts_latitude=!_ts_latitude! ,8:%%0,
+set _ts_latitude=%_ts_latitude:$=*%
 goto Menu
 
 :_ts_longitude
 set _ts_longitude=
 set /p var=Longitude: 
 for %%0 in (%var%) do set _ts_longitude=!_ts_longitude! ,9:%%0,
+set _ts_longitude=%_ts_longitude:$=*%
 goto Menu
 
 :_ts_accuracy_radius
 set _ts_accuracy_radius=
 set /p var=Accuracy Radius: 
 for %%0 in (%var%) do set _ts_accuracy_radius=!_ts_accuracy_radius! ,10:%%0,
+set _ts_accuracy_radius=%_ts_accuracy_radius:$=*%
 goto Menu
 
 :_ts_continent_code
@@ -199,30 +208,35 @@ goto _ts_continent_code2
 set _ts_country_iso_code=
 set /p var=Country ISO Code: 
 for %%0 in (%var%) do set _ts_country_iso_code=!_ts_country_iso_code! ,12:%%0,
+set _ts_country_iso_code=%_ts_country_iso_code:$=*%
 goto Menu
 
 :_ts_subdivision_1_iso_code
 set _ts_subdivision_1_iso_code=
 set /p var=Subdivision 1 ISO Code: 
 for %%0 in (%var%) do set _ts_subdivision_1_iso_code=!_ts_subdivision_1_iso_code! ,13:%%0,
+set _ts_subdivision_1_iso_code=%_ts_subdivision_1_iso_code:$=*%
 goto Menu
 
 :_ts_subdivision_2_iso_code
 set _ts_subdivision_2_iso_code=
 set /p var=Subdivision 2 ISO Code: 
 for %%0 in (%var%) do set _ts_subdivision_2_iso_code=!_ts_subdivision_2_iso_code! ,14:%%0,
+set _ts_subdivision_2_iso_code=%_ts_subdivision_2_iso_code:$=*%
 goto Menu
 
 :_ts_metro_cod
 set _ts_metro_code=
 set /p var=Metro Code: 
 for %%0 in (%var%) do set _ts_metro_code=!_ts_metro_code! ,15:%%0,
+set _ts_metro_cod=%_ts_metro_cod:$=*%
 goto Menu
 
 :_ts_time_zone
 set _ts_time_zone=
 set /p var=Time Zone: 
 for %%0 in (%var%) do set _ts_time_zone=!_ts_time_zone! ,16:%%0,
+set _ts_time_zone=%_ts_time_zone:$=*%
 goto Menu
 
 :_ts_is_in_european_union
@@ -236,12 +250,14 @@ goto Menu
 set _ts_asn_network=
 set /p var=ASN Network: 
 for %%0 in (%var%) do set _ts_asn_network=!_ts_asn_network! ,18:%%0,
+set _ts_asn_network=%_ts_asn_network:$=*%
 goto Menu
 
 :_ts_autonomous_system_number
 set _ts_autonomous_system_number=
 set /p var=ASN: 
 for %%0 in (%var%) do set _ts_autonomous_system_number=!_ts_autonomous_system_number! ,19:%%0,
+set _ts_autonomous_system_number=%_ts_autonomous_system_number:$=*%
 goto Menu
 
 :_ts_is_tor_node
