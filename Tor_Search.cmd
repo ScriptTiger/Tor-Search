@@ -302,7 +302,6 @@ if "%Results%"=="" (
 	if %OPT%==1 (
 		echo.
 		echo %Results:~1,-1% | more
-		echo.
 		pause
 	) else echo %Results:~1,-1%>>"%FILE%"
 )
@@ -321,6 +320,7 @@ if %Results%==0 (
 	pause
 ) else (
 	if %OPT%==3 (
+		echo.
 		%Search% | more
 		pause
 	) else %Search%>>"%FILE%"
