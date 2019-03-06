@@ -115,7 +115,7 @@ goto Menu
 :_ts_registered_country_geoname_id
 set _ts_registered_country_geoname_id=
 set /p var=Registered Country Geoname ID: 
-for %%0 in (%var) do set _ts_registered_country_geoname_id=!_ts_registered_country_geoname_id! ,D:%%0,
+for %%0 in (%var%) do set _ts_registered_country_geoname_id=!_ts_registered_country_geoname_id! ,D:%%0,
 call :Input _ts_registered_country_geoname_id "%_ts_registered_country_geoname_id%"
 goto Menu
 
