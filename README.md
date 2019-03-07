@@ -28,6 +28,9 @@ Where allowed, you may input multiple items of a single type to search for by si
 
 Some search criteria for this script are ISO codes, which are standardized codes managed by the International Organization for Standardization and are universal, independent of language. Some other search criteria are GeoNames IDs, managed by the GeoNames database and are also universal and independent of language. Please refer to the respective authorities, or simply use your favorite Web search engine, to quickly look up code/ID references.
 
+You can download this repo from the below link to get started:  
+https://github.com/ScriptTiger/Tor-Search/archive/master.zip
+
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MZ4FH4G5XHGZ4)
 
 Donate Monero (XMR): 441LBeQpcSbC1kgangHYkW8Tzo8cunWvtVK4M6QYMcAjdkMmfwe8XzDJr1c4kbLLn3NuZKxzpLTVsgFd7Jh28qipR5rXAjx
