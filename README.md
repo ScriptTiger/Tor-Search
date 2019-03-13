@@ -28,7 +28,7 @@ Where allowed, you may input multiple items of a single type to search for by si
 
 Some search criteria for this script are ISO codes, which are standardized codes managed by the International Organization for Standardization and are universal, independent of language. Some other search criteria are GeoNames IDs, managed by the GeoNames database and are also universal and independent of language. Please refer to the respective authorities, or simply use your favorite Web search engine, to quickly look up code/ID references.
 
-For the complete GeoIP data set of numbers and short codes for each node, choose one of the raw output options. For more easy reading, you can also use the IP repo (https://github.com/ScriptTiger/IP) to instantly translate the numbers and short codes to a variety of languages.
+For the complete GeoIP data set of numbers and short codes for each node, choose one of the raw output options. For more easy reading, you can also use the IP repo (https://github.com/ScriptTiger/IP) to instantly translate the numbers and short codes to a variety of languages for any given node IP address.
 
 You can download this repo from the below link to get started:  
 https://github.com/ScriptTiger/Tor-Search/archive/master.zip
