@@ -282,10 +282,7 @@ for /f "tokens=1* delims==" %%0 in ('set _ts_') do (
 )
 cls
 set Results=
-if %OPT%==1 goto OPT1
-if %OPT%==2 goto OPT2
-if %OPT%==3 goto OPT3
-if %OPT%==4 goto OPT4
+goto OPT%OPT%
 
 :OPT1
 :OPT2
