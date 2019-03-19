@@ -284,9 +284,9 @@ rem =====
 set Search=
 for /f "tokens=1* delims==" %%0 in ('set _ts_') do (
 	if "!Search!"=="" (
-		set Search=findstr "%%1" %TABLE%
+		set Search=findstr /i "%%1" %TABLE%
 	) else (
-		set Search=!Search! ^^^^^| findstr "%%1"
+		set Search=!Search! ^^^^^| findstr /i "%%1"
 	)
 )
 cls
