@@ -33,4 +33,7 @@ For the complete GeoIP data set of numbers and short codes for each node, choose
 You can download this repo from the below link to get started:  
 https://github.com/ScriptTiger/Tor-Search/archive/master.zip
 
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MZ4FH4G5XHGZ4)
+# More About ScriptTiger
+
+For more ScriptTiger scripts and goodies, check out ScriptTiger's GitHub Pages website:  
+https://scripttiger.github.io/
